@@ -26,17 +26,6 @@
   --mustard: #d4a534;
   --grid-line: rgba(31, 29, 26, 0.07);
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #16140d;
-    --paper: #1f1c12;
-    --ink: #ece6d6;
-    --ink-soft: #a39a86;
-    --rule: #ece6d6;
-    --grid-line: rgba(236, 230, 214, 0.08);
-  }
-}
-
 * {
   box-sizing: border-box;
 }
