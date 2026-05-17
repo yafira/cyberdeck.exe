@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>cyberdeck.exe/moodboard</title>
+    <meta
+      name="description"
+      content="soft systems, cyberdeck inspo, and experiments by two softies. a moodboard by yafira & alanna for SOFTER's cyberdeck residency open call."
+    />
+    <meta property="og:title" content="cyberdeck.exe // moodboard" />
+    <meta
+      property="og:description"
+      content="soft systems, cyberdeck inspo, and experiments by two softies"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Fraunces:opsz,wght,SOFT@9..144,300;9..144,500;9..144,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- top status strip, like a hardware spec header -->
+    <div class="spec-strip" role="banner">
+      <span class="dot" aria-hidden="true"></span>
+      <span><span class="k">device:</span> cyberdeck.exe</span>
+      <span
+        ><span class="k">status:</span> <em id="status-text">booting</em></span
+      >
+      <span><span class="k">sync:</span> <span id="sync-time">live</span></span>
+      <span class="grow"></span>
+      <nav class="nav">
+        <a class="nav-link" href="index.html" aria-current="page">moodboard</a>
+        <a class="nav-link" href="about.html">about</a>
+        <a
+          class="nav-link action"
+          href="https://www.are.na/yafira/cyberdeck-exe-9tnkemv_c50"
+          target="_blank"
+          rel="noopener"
+          >are.na &rarr;</a
+        >
+      </nav>
+    </div>
+
+    <!-- masthead -->
+    <header class="masthead">
+      <div class="masthead-inner">
+        <div class="crumb">
+          moodboard <b>// </b> SOFTER residency <b>// </b> aug 03 to 16, 2026
+        </div>
+        <h1 class="title">
+          cyberdeck<span class="ext">.exe</span
+          ><span class="cursor" aria-hidden="true"></span>
+        </h1>
+        <p class="tagline">
+          soft systems, cyberdeck inspo, and experiments by two softies. a
+          working moodboard for SOFTER's open call, gathered live from
+          <a
+            href="https://www.are.na/yafira/cyberdeck-exe-9tnkemv_c50"
+            target="_blank"
+            rel="noopener"
+            >are.na</a
+          >. ━━☆.*҉̛☆ ♡ ✿
+        </p>
+
+        <div class="datasheet" id="datasheet">
+          <div class="cell">
+            <span class="k">channel</span><span class="v">cyberdeck.exe</span>
+          </div>
+          <div class="cell">
+            <span class="k">blocks</span><span class="v" id="ds-count">…</span>
+          </div>
+          <div class="cell">
+            <span class="k">started</span
+            ><span class="v" id="ds-started">…</span>
+          </div>
+          <div class="cell">
+            <span class="k">last sync</span
+            ><span class="v" id="ds-updated">…</span>
+          </div>
+          <div class="cell">
+            <span class="k">target</span><span class="v">SOFTER Lab, CPH</span>
+          </div>
+          <div class="cell">
+            <span class="k">deadline</span
+            ><span class="v">01 jun 2026 // 12:00 CEST</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- collaborators -->
+    <div class="collab-row" id="collab-row">
+      <span class="label">collaborators</span>
+      <a
+        class="chip"
+        href="https://instagram.com/electrocutelab"
+        target="_blank"
+        rel="noopener"
+      >
+        <span class="swatch" style="background: var(--lav)"></span>
+        <span class="name">yafira</span>
+        <span class="handle">@electrocutelab</span>
+      </a>
+      <a
+        class="chip"
+        href="https://instagram.com/alannabean"
+        target="_blank"
+        rel="noopener"
+      >
+        <span class="swatch" style="background: var(--mustard)"></span>
+        <span class="name">alanna</span>
+        <span class="handle">@alannabean</span>
+      </a>
+    </div>
+
+    <!-- type legend / filters -->
+    <div class="legend" id="legend">
+      <span class="label">filter</span>
+      <button data-type="all" aria-pressed="true">
+        <span class="sw" style="background: var(--ink)"></span>all
+      </button>
+      <span class="count" id="visible-count"></span>
+    </div>
+
+    <!-- grid -->
+    <main id="grid" class="grid" aria-live="polite">
+      <div class="status"><span class="blink">loading channel</span></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
