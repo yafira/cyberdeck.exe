@@ -654,6 +654,7 @@ h1.title .cursor {
   color: var(--ink-soft);
   letter-spacing: 0.04em;
   margin: 0;
+  line-height: 1.6;
 }
 .bio-meta a {
   color: var(--ink-soft);
