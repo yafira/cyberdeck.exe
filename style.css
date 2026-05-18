@@ -587,51 +587,102 @@ h1.title .cursor {
   border-bottom-color: var(--lav-deep);
 }
 
-.people {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 28px;
-}
-.person {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 14px 10px 10px;
-  border: 1px solid var(--rule);
+/* bios */
+.bios {
+  border-top: 1.5px solid var(--rule);
+  padding: 0;
   background: var(--paper);
-  border-radius: 12px;
-  text-decoration: none !important;
-  border-bottom-style: solid !important;
-  transition:
-    transform 0.15s,
-    box-shadow 0.15s;
 }
-.person:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 3px 3px 0 var(--rule);
+.bios-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 56px 28px 80px;
 }
-.person .swatch {
-  width: 28px;
-  height: 28px;
+.bios-heading {
+  font-family: "Departure Mono", "IBM Plex Mono", monospace;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ink-soft);
+  margin: 0 0 32px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--rule);
+}
+
+.bio {
+  margin: 0 0 40px;
+  padding: 0 0 36px;
+  border-bottom: 1px dashed var(--rule);
+}
+.bio:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.bio-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.bio-head .swatch {
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  border: 1px solid var(--rule);
+  border: 1.5px solid var(--rule);
   flex-shrink: 0;
 }
-.person-text {
+.bio-id {
   display: flex;
   flex-direction: column;
-  line-height: 1.2;
+  gap: 2px;
+  min-width: 0;
 }
-.person-name {
-  font-size: 14px;
-  font-weight: 500;
+.bio-name {
+  font-family: "Departure Mono", "IBM Plex Mono", monospace;
+  font-size: 22px;
+  font-weight: 400;
   color: var(--ink);
+  margin: 0;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
 }
-.person-handle {
+.bio-meta {
+  font-family: "Departure Mono", "IBM Plex Mono", monospace;
   font-size: 11px;
   color: var(--ink-soft);
-  margin-top: 2px;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+.bio-meta a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--ink-soft);
+  transition:
+    color 0.15s,
+    border-color 0.15s;
+}
+.bio-meta a:hover {
+  color: var(--lav-deep);
+  border-bottom-color: var(--lav-deep);
+}
+
+.bio-body {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--ink);
+  max-width: 68ch;
+}
+.bio-body p {
+  margin: 0 0 12px;
+}
+.bio-body p:last-child {
+  margin-bottom: 0;
+}
+.bio-body em {
+  font-style: italic;
+  color: var(--ink);
 }
 
 /* legend / type filters */
